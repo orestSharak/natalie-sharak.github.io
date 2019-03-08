@@ -23,7 +23,10 @@
     "react-stack-grid": "^0.7.1",
     "react-transition-group": "^2.6.0"
   },
-  "description": "Photography Natalie Sharak.",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "description": "Photography Natalie Sharak",
   "main": "index.js",
   "author": "Orest Sharak",
   "license": "ISC",
