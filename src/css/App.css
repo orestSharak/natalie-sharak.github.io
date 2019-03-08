@@ -371,6 +371,7 @@ figure.effect-sadie:hover img {
      padding-bottom: 20px;
      margin: auto;
      max-height: 100vh;
+    object-fit: contain;
  }
 
 /*  ----------------------------------------------------------------  contact view  */
