@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/natalie-sharak.github.io/static/js/runtime~main.048a9cd0.js"
   },
   {
-    "revision": "10f358fabc341cc40753",
+    "revision": "d6c8cda7b6e547faa841",
     "url": "/natalie-sharak.github.io/static/js/main.72ae8ede.chunk.js"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/natalie-sharak.github.io/static/js/2.b46e751f.chunk.js"
   },
   {
-    "revision": "10f358fabc341cc40753",
-    "url": "/natalie-sharak.github.io/static/css/main.d0570f1c.chunk.css"
+    "revision": "d6c8cda7b6e547faa841",
+    "url": "/natalie-sharak.github.io/static/css/main.fbf18420.chunk.css"
   },
   {
-    "revision": "a1ebf645df665eda483ddc22854b1600",
+    "revision": "4b2695a0ea2578e8ca31de562647f962",
     "url": "/natalie-sharak.github.io/index.html"
   }
 ];
