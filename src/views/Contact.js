@@ -4,6 +4,7 @@ import Iframe from '../component/iframe';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {fab} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope, faMobileAlt, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 library.add(fab);
 
 
@@ -25,14 +26,17 @@ class Contact extends Component {
                             <h1>Natalie Sharak</h1>
                             <p>Photography</p>
                             <hr/>
-                            <a href="tel:+380637230755" className="contact-text">+38 063 723 07 55</a>
-                            <a href="mailto:korycia@gmail.com" className="contact-text">korycia@gmail.com</a>
-                            <span className="contact-text">
-                            <a className="social-btn" target="_blank"  rel="noopener noreferrer"  href="http://www.facebook.com/photoNataliSharak/"><FontAwesomeIcon
-                                icon={['fab', 'facebook']} size="2x"/></a>
-                            <a className="social-btn" target="_blank" rel="noopener noreferrer"  href="http://www.instagram.com"><FontAwesomeIcon
-                                icon={['fab', 'instagram']} size="2x"/></a>
+                            <div className="d-flex flex-column ">
+                            <span className="contact-text"><FontAwesomeIcon icon={faMapMarkerAlt} size="1x"/>&nbsp; Lviv, UA</span>
+                            <a href="tel:+380637230755" className="contact-text"><FontAwesomeIcon icon={faMobileAlt} size="1x"/>&nbsp; +38 063 723 07 55</a>
+                            <a href="mailto:korycia@gmail.com" className="contact-text"><FontAwesomeIcon icon={faEnvelope} size="1x"/>&nbsp; korycia@gmail.com</a>
+                            <span className="d-flex flex-column">
+                            <a className="social-btn contact-text" target="_blank"  rel="noopener noreferrer"  href="http://www.facebook.com/photoNataliSharak/"><FontAwesomeIcon
+                                icon={['fab', 'facebook']} size="1x"/>&nbsp; Facebook</a>
+                            <a className="social-btn contact-text" target="_blank" rel="noopener noreferrer"  href="http://www.instagram.com"><FontAwesomeIcon
+                                icon={['fab', 'instagram']} size="1x"/>&nbsp; Instagram</a>
                             </span>
+                            </div>
                         </div>
                         <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                             <Iframe source={this.state.src}/>

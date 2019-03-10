@@ -9,7 +9,6 @@
 
 h1 {
     font-family: 'EB Garamond', serif;
-    font-style: italic;
     font-weight: 400;
 }
 
@@ -422,7 +421,7 @@ figure.effect-sadie:hover img {
 /* ------------------------------------------------------------------- social button  */
 
 .social-btn {
-    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 5px;
     font-size: 1em !important;
     color: black;

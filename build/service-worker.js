@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/natalie-sharak.github.io/precache-manifest.b93c89ef1b01687578ed8369b28e57ca.js"
+  "/natalie-sharak.github.io/precache-manifest.2eb60215fa367e34dba48bccb98bdee7.js"
 );
 
 workbox.clientsClaim();

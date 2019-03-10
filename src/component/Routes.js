@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import Home from '../views/Home';
 import Portrait from '../views/Portrait';
