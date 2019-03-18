@@ -82,6 +82,7 @@ hr{
     }
 }
 
+
 /* --------------------------------------------------  header  */
 
 .my-header {
@@ -280,6 +281,8 @@ img {
 figure {
     overflow: hidden;
     text-align: center;
+    position: relative;
+    animation: helix 600ms linear  both;
 }
 
 figcaption {
@@ -497,12 +500,109 @@ a.social-menu:hover {
     opacity: 0;
 }
 
+/* ----------------------------------------------------------- animation figure  */
+
+@keyframes helix {
+    0% {
+        opacity: 0;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    30%{
+        -webkit-perspective: 100vh;
+        -moz-perspective: 100vh;
+        perspective: 100vh;
+        opacity: 0;
+        -webkit-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        -o-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+
+
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+}
+
+@-webkit-keyframes helix {
+    0% {
+        opacity: 0;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    30%{
+        -webkit-perspective: 100vh;
+        -moz-perspective: 100vh;
+        perspective: 100vh;
+        opacity: 0;
+        -webkit-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        -o-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+
+
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+}
+
+
+
+/* -------------------------------------------------------------------------- masonry css  */
+
+.my-masonry-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -15px;
+    width: auto;
+}
+.my-masonry-grid_column {
+    padding-left: 15px;
+    background-clip: padding-box;
+    transition:width 500ms;
+}
+
+   .my-masonry-grid_column > figure { /* change div to reference your elements you put in <Masonry> */
+       margin-bottom: 15px;
+   }
+
 /* -------------------------------------------------------------------------- large device settings  */
 
 @media screen and (max-width: 992px) {
 
     #slideMenu ul li a {
         font-size: 2em;
+    }
+
+    .my-masonry-grid {
+        margin-left: -10px;
+    }
+    .my-masonry-grid_column {
+        padding-left: 10px;
+    }
+    .my-masonry-grid_column > figure {
+        margin-bottom: 10px;
     }
 }
 

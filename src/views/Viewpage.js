@@ -15,10 +15,12 @@ const Viewpage = ({match}) => {
                 <div className="container-fluid ">
                     <div className="d-flex flex-column ">
                         {image.posters.map((i, index) => (
-                            <img className="viewpage_image" key={index} src={`${i.url}.jpg`} alt={index}/>)
+                            <img className="viewpage_image"
+                                 key={index}
+                                 src={`${i.url}.jpg`}
+                                 alt={index}
+                                 style={{animation: 'helix 600ms linear  both', animationDelay: `${index * 100}ms`}}/>)
                         )}
-
-
                         <BackBtn/>
                     </div>
                 </div>

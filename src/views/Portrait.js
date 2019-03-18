@@ -1,36 +1,31 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {withSize} from 'react-sizeme';
-import StackGrid, {transitions, easings} from 'react-stack-grid';
+import Masonry from 'react-masonry-css';
 import images from '../api/Collections';
 import Footer from "../component/footer/Footer";
 
-const transition = transitions.helix;
+const breakpointColumnsObj = {
+    default: 3,
+    992: 2,
+    767: 1
+};
 
-const Portrait = ({match, size}) => {
+
+const Portrait = ({match}) => {
 
     return (
         <div>
             <div className="spacer-top container-fluid content">
-                <StackGrid
-                    className="spacer-top"
-                    monitorImagesLoaded={true}
-                    columnWidth={(size.width <= 768) ? '100%' : (size.width <= 992) ? '50%' : '33.33%'}
-                    duration={600}
-                    gutterWidth={10}
-                    gutterHeight={10}
-                    easing={easings.cubicOut}
-                    appearDelay={60}
-                    appear={transition.appear}
-                    appeared={transition.appeared}
-                    enter={transition.enter}
-                    entered={transition.entered}
-                    leaved={transition.leaved}
+                <Masonry
+                    breakpointCols={breakpointColumnsObj}
+                    className="my-masonry-grid spacer-top"
+                    columnClassName="my-masonry-grid_column"
                 >
-                    {images.filter((title) => title.title === 'portrait').map(i => (
+                    {images.filter((title) => title.title === 'portrait').map((i, index) => (
                         <figure
-                            key={i.src}
+                            key={index}
                             className="image effect-sadie"
+                            style={{animationDelay: `${index * 100}ms`}}
                         >
                             <Link to={{
                                 pathname: `/viewpage/${i.id}`
@@ -42,11 +37,11 @@ const Portrait = ({match, size}) => {
                             </Link>
                         </figure>
                     ))}
-                </StackGrid>
+                </Masonry>
             </div>
             <Footer/>
         </div>
     )
 };
 
-export default withSize()(Portrait);
+export default Portrait;

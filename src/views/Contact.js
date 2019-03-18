@@ -22,7 +22,7 @@ class Contact extends Component {
                 <div className="spacer-top container content">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center">
-                            <img className="contact-img" src="https://orestsharak.github.io/natalie-sharak.github.io/image/contact.jpg" alt="contact"/>
+                            <img className="contact-img" src="https://orestsharak.github.io/natalie-sharak.github.io/image/contact.jpg" alt="contact" style={{animation: 'helix 600ms linear  both', animationDelay: '100ms'}}/>
                             <h1>Natalie Sharak</h1>
                             <p>Photography</p>
                             <hr/>
