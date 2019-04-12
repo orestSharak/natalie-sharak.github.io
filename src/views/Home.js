@@ -12,6 +12,7 @@ const breakpointColumnsObj = {
 };
 
 class Home extends Component {
+
     render() {
 
         return (
@@ -31,7 +32,9 @@ class Home extends Component {
                                 >
                                     <Link to={{
                                         pathname: `/viewpage/${i.id}`
-                                    }}> <img src={`${i.src}.jpg`} alt={i.label}/>
+                                    }}> <img src={`${i.src}.jpg`} alt={i.label}
+
+                                    />
                                         <figcaption>
                                             <h2>{i.label}</h2>
                                             <p>{i.title}</p>

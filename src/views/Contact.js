@@ -12,7 +12,7 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20587.95522824168!2d23.96673562870693!3d49.83316718126288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae762a48e4c9b%3A0x31b651c0f2a3e14!2sL%CA%B9vivsil%CA%B9mash+Z-D+Vat!5e0!3m2!1spl!2spl!4v1551815629970"
+            src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.4978592923153!2d23.982318415128404!3d49.8331022395357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae78402b24dcb%3A0x115e4bd8aacb68!2sNatalie+Sharak+Photography!5e0!3m2!1suk!2spl!4v1555103665703!5m2!1suk!2spl"
         };
     }
 
